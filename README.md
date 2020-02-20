@@ -5,7 +5,7 @@
     This repository is still being built! There are many things still to be done:
 
     - Detail database structures.
-    - Include SQL files with descriptions.
+    X Include SQL files with descriptions.
     - Include form autocomplete example.
 
 ## Updated Analytical Method
