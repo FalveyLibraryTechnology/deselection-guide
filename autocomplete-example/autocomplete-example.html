@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/papaparse@5.1.1/papaparse.min.js"></script>
+    <link rel="stylesheet" href="css/tailwind-vars.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Barcode Autocomplete example</title>
+  </head>
+  <body>
+    <div class="ac-field" data-template="ac-input">
+      <input class="ac-hidden" type="hidden" name="barcode[]" />
+      <input
+        type="search"
+        class="ac-input"
+        pattern="\d+"
+        placeholder="Paste barcode"
+      />
+      <div class="barcode-invalid">
+        Be sure you're entering a barcode, such as 39346004309318.
+      </div>
+      <button class="ac-display" data-slot="ac"></button>
+      <button class="ac-edit-btn">✏️</button>
+    </div>
+
+    <div id="fields"></div>
+    <button id="submit">Submit</button>
+
+    <pre id="output"></pre>
+
+    <script src="js/template.js"></script>
+    <script src="js/example.js"></script>
+  </body>
+</html>

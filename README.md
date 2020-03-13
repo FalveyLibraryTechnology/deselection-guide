@@ -6,7 +6,7 @@
 
     - Detail database structures.
     X Include SQL files with descriptions.
-    - Include form autocomplete example.
+    X Include form autocomplete example.
 
 ## Updated Analytical Method
 
@@ -93,3 +93,5 @@ It was our discovery that giving faculty deadline extensions for posted lists wa
 ### Faculty Request Entry
 
 One aspect that we struggled with was designing the way faculty make their requests. The process was designed to honor all faculty requests, but we wanted to avoid the 98% retention CSUF experienced with their user-friendly, checkbox interface. However, the individual entry form that we landed on was perhaps overly burdensome. Faculty often hired student workers to enter the data in the required form. The fields we required were the minimum necessary to prevent errors but an autocomplete system built around the book barcodes would reduce errors and balance the burdens places on the faculty and their student workers. The project developer intends to add an autocomplete system that presents the matching title of the book once a barcode has been pasted in. This feedback will prevent mismatch and duplication errors and prevent incorrect data like call numbers from being submitted.
+
+For an example of such a system, check out the `autocomplete-example` folder.

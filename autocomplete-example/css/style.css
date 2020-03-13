@@ -1,0 +1,83 @@
+html {
+  font-size: 16px;
+}
+body {
+  padding: 1rem 2rem;
+  font-family: system-ui;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+button {
+  font: inherit;
+  border: 0;
+  background-color: transparent;
+}
+input {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--gray-700);
+}
+:invalid {
+  color: var(--red-700);
+  border-color: var(--red-700);
+}
+
+.ac-display,
+.barcode-invalid {
+  display: table;
+  max-width: 40rem;
+  margin-top: 2px;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--gray-700);
+  line-height: 1.15;
+  box-shadow: var(--shadow);
+}
+.barcode-invalid {
+  display: none;
+}
+:invalid + .barcode-invalid {
+  display: table;
+  color: var(--red-700);
+  border-color: var(--red-700);
+  background-color: var(--red-200);
+}
+
+#submit {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background-color: var(--blue-800);
+}
+
+.ac-field {
+  display: table;
+  margin: 1rem 0;
+}
+.ac-edit-btn {
+  display: none;
+  margin-left: 0.25rem;
+  padding: 1rem;
+}
+.ac-edit-btn:hover {
+  background-color: var(--gray-200);
+}
+.is\:set {
+  display: flex;
+  align-items: center;
+}
+.is\:set .ac-display {
+  border: 0;
+  background-color: var(--green-200);
+}
+.is\:set .ac-edit-btn {
+  display: inline;
+  flex: none;
+  cursor: pointer;
+}
+
+.is\:set .ac-input,
+.is\:set .barcode-invalid,
+.ac-display:empty,
+.barcode-invalid:empty {
+  display: none;
+}
