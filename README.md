@@ -2,12 +2,6 @@
 
 > This repository is an appendix to our white paper detailing our comprehensive deselection process, currently in review.
 
-    This repository is still being built! There are many things still to be done:
-
-    - Detail database structures.
-    X Include SQL files with descriptions.
-    X Include form autocomplete example.
-
 ## Updated Analytical Method
 
 The outline and figures below consolidate all of the lessons learned and represents the final state of our analytical process after two years of progressive changes.
